@@ -1,0 +1,21 @@
+body{
+  font-family: "proxima-nova", sans-serif;
+}
+
+h1{
+	font-size: 3em
+}
+
+#menu {
+	font-size: 1em;
+}
+
+.slide {
+	text-align: center;
+}
+
+.slide img{
+	max-width: 50%;
+	position: relative;
+}
+
