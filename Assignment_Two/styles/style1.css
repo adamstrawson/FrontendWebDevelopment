@@ -43,16 +43,24 @@ h1{
 	text-align: center;	
 	z-index: 100;
 	position: absolute;
-	font-size: 8em; /*22em full screen*/
-	color: rgba(255, 255, 255, 0.95); /*last value is text transparency*/
+	font-size: 22em; /*22em full screen*/
+	color: rgba(255, 255, 255, 0.90); /*last value is text transparency*/
 	width: 100%;
 
 }
 
 #homeSplash a{
 	position: absolute;
-	display: block; 
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 	width: 100%; 
 	height: 100%;
 }
+
+#homeSplash {
+	cursor:pointer; 
+}
+
 
