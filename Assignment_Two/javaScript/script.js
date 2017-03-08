@@ -3,3 +3,4 @@ $(document).ready(function(){
    	$(this).parent('#homeSplash').fadeOut(1000);
 	});			
 });
+
