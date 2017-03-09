@@ -239,9 +239,8 @@
 	}
 
 	#homeSplash img{
-		max-width: 100%;
-		max-height: 100%;
 		top: 50%;
+		width: 100%;
 
 	}
 
@@ -250,7 +249,7 @@
 		z-index: 100;
 		position: absolute;
 		font-size: 4em; /*22em full screen*/
-		color: rgba(255, 255, 255, 0.90); /*last value is text transparency*/
+		color: rgba(204, 115, 119, 0.9); /*last value is text transparency*/
 		width: 100%;
 	}
 
@@ -418,6 +417,8 @@
 
 
 
+
+
 }
 
 
@@ -476,6 +477,9 @@
 		overflow-x: hidden;
 	}
 
+
+}
+
 @media screen and (min-width: 800px) {
 
 	
@@ -490,20 +494,27 @@
     width: 100%; 
     display: block;
     background-color: white;
+    overflow: hidden;
     
 	}
 
 	#main-slideshow div { 
 	  position: fixed;  
-	  height: 100%;
 	  width: 100%;
 	}
 
 	#main-slideshow div img {
-		height: 100%;
+		width: 100%;
+		margin: auto;
+
 	}
 
-
+	#main-slideshow h1 {
+		z-index: 1;
+		position: absolute;
+		font-size: 20em;
+		color: rgba(204, 115, 119, 0.9);
+	}
 
 }
 

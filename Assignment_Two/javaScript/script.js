@@ -33,6 +33,6 @@ setInterval(function() {
     .next()
     .fadeIn(1000)
     .appendTo('#main-slideshow');
-}, 5000);
+}, 3000);
 
 
