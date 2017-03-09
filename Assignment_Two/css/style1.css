@@ -494,7 +494,6 @@
     width: 100%; 
     display: block;
     background-color: white;
-    overflow: hidden;
     
 	}
 
@@ -505,8 +504,6 @@
 
 	#main-slideshow div img {
 		width: 100%;
-		margin: auto;
-
 	}
 
 	#main-slideshow h1 {
