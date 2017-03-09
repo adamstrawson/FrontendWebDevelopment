@@ -522,11 +522,19 @@
 	#homeSplash h1{
 		font-size: 22em;
 	}
+
+	#main-slideshow h1 {
+		font-size: 22em;
+	}
 }
 
 @media screen and (min-width: 1440px) {
 
 	#homeSplash h1{
+		font-size: 24em;
+	}
+
+	#main-slideshow h1 {
 		font-size: 24em;
 	}
 }
@@ -536,4 +544,10 @@
 	#homeSplash h1{
 		font-size: 26em;
 	}
+
+	#main-slideshow h1 {
+		font-size: 26em;
+	}
+
+
 }
