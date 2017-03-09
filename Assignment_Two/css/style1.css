@@ -21,6 +21,11 @@
 		font-size: 3em
 	}
 
+	#postSplash {
+		opacity: 0;
+		transition: 1s;
+	}
+
 	#postSplash nav h1 {
 		float: left;
 
@@ -337,6 +342,10 @@
 		margin-left: 175px; 
 	}
 
+	#homeSplash {
+		position: absolute;
+	}
+
 	#homeSplash h1{
 		font-size: 8em; /*22em full screen*/
 	}
@@ -350,6 +359,7 @@
 		height: 100%;
 		width: 175px;
 	  float: left;
+	  transition: 0.5s;
 
 	}
 
@@ -358,10 +368,12 @@
 	}
 
 	#menuBtn {
-		display: none;
 	}
 
 
+@media screen and (min-width: 1280px) {
 
-
+	#homeSplash h1{
+		font-size: 22em; /*22em full screen*/
+	}
 }
