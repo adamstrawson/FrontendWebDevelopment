@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
 	body{
   font-family: "proxima-nova", sans-serif;
   min-height: 100%;
@@ -16,10 +16,55 @@
 
 	}
 
-	#mainMenu {
-		display: none;
-	  
+	#menuBtn {
+		color: rgba(255, 255, 255, 0.9);	
+		z-index: 1;
+		transition: 0.5s;
 	}
+
+	#menuBtn:hover {
+		color: #cc7377;
+		cursor: pointer;
+	}
+
+	#mainMenu {
+	  height: 100%; 
+    width: 0; /* alter with JavaScript */
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    padding-top: 20px; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    overflow-x: hidden; 
+    white-space: nowrap;
+    transition: 1s; 
+	}
+
+	#mainMenu a {
+    padding: 10px 10px 10px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d3d3d3;  /*#818181*/
+    display: block;
+    transition: 0.3s;
+    overflow-x: hidden;
+	}
+
+	#mainMenu a:hover {
+    color: #cc7377;
+	}
+
+
+	#mainMenu .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	}
+
+
 
 	.slideshow {
 		width: 300px;
@@ -61,8 +106,11 @@
 	*/
 	.slide img {
 		height:450px;
-		left: 100px;
 		overflow-x: hidden;
+	}
+
+	.slide #image5 {
+		right: 300px;
 	}
 
 	
@@ -73,11 +121,87 @@
 		color: rgba(255, 255, 255, 0.9); /*last value is text transparency*/
 		width: 100%;
 		top: 300px;
-		background-color: rgba(0, 0, 0, 0.35);
+		transition: 0.3s
+
 	}
 
-	.slide a h1 i {
-		position: relative;
+	.slide a h1:hover {
+		/*color: #992d2b;*/
+	}
+
+	#slide-1 a h1 {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+
+	.slide a i {
+		top: 400px; 
+		font-size: 2em;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+
+
+	#slide-1 i{
+		left: 260px;
+		position: absolute;
+	}
+
+	#slide-2 i{
+		position: absolute;
+	}
+
+	#slide-2 .fa-arrow-right{
+		left: 560px; /*size of one slide + 260*/
+	}
+
+	#slide-2 .fa-arrow-left{
+		left: 312px; /*size of one slide + 12*/
+	}
+
+	#slide-3 i{
+		position: absolute;
+	}
+
+	#slide-3 .fa-arrow-right{
+		left: 860px; /*size of two slides + 260*/
+	}
+
+	#slide-3 .fa-arrow-left{
+		left: 612px; /*size of two slides + 12*/
+	}
+
+	#slide-4 i{
+		position: absolute;
+	}
+
+	#slide-4 .fa-arrow-right{
+		left: 1160px; /*size of three slides + 260*/
+	}
+
+	#slide-4 .fa-arrow-left{
+		left: 912px; /*size of three slides + 12*/
+	}
+
+
+	#slide-5 i{
+		position: absolute;
+	}
+
+	#slide-5 .fa-arrow-right{
+		left: 1460px; /*size of four slides + 260*/
+	}
+
+	#slide-5 .fa-arrow-left{
+		left: 1212px; /*size of four slides + 12*/
+	}
+
+	#slide-6 i{
+		position: absolute;
+	}
+
+	#slide-6 .fa-arrow-left{
+		left: 1512px; /*size of four slides + 12*/
 	}
 
 
@@ -92,7 +216,6 @@
 	  width:100%;
 	  background-color:black;
 	  cursor:pointer; 
-	  position: fixed;
 
 	}
 
