@@ -1,10 +1,20 @@
 
-@media screen and (max-width: 480px) {
+@media screen {
 	body{
   font-family: "proxima-nova", sans-serif;
   min-height: 100%;
   background-color: black;	
   overflow-x: hidden;
+
+  /* allows user to use mouse to navigate slides if on device without touchscreen.
+	*	 These stop the text from being selected when draging.
+  */
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  user-select: none;
 	}
 
 	h1{
@@ -81,14 +91,16 @@
 	Hides the scrollbar for the slideshow to help it look cleaner for mobile users.
 	*/
 	.slideshow::-webkit-scrollbar {
-    width:0;
+		width: 0;
 	}
+
 
 	.slideshow .slide {
 		float: left;
   	width: 300px;
   	height: 500px;
   	overflow-x: hidden;
+  	overflow-y: hidden;
 	}
 
 
@@ -237,7 +249,7 @@
 
 	#homeSplash a{
 		position: absolute;
-		top: 0;
+		top: 100px;
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
@@ -245,83 +257,111 @@
 		height: 100%;
 	}
 
+}
 
+
+@media screen and (min-width: 350px) and (max-width: 480px) {
+
+	#homeSplash h1{
+		font-size: 5em; /*22em full screen*/
+	}
+
+}
+
+@media screen and (min-width: 410px) and (max-width: 480px) {
+
+	#homeSplash h1{
+		font-size: 6em; /*22em full screen*/
+	}
+	
+	#homeSplash .enter{
+		overflow-x: hidden;
+		top: 150px;
+
+	}
+
+
+	.slideshow .slide {
+  	width: 350px;
+  	height: 525px;
+  	overflow-x: hidden;
+
+	}
+
+	.slideshow {
+		width: 350px;
+  	height: 525px;
+
+	}
+
+	.slide img {
+		height:	525px;
+		overflow-x: hidden;
+	}
+
+	.slide #image5 {
+		right: 300px;
+	}
 
 
 
 }
 
-@media screen and (min-width: 500px) {
-
-	body {
-  font-family: "proxima-nova", sans-serif;
-  min-height: 100%;
-  background-color: black;	
-  overflow: hidden;
-	}
-
-	#homeSplash {
-	  position:absolute;
-	  top:0;
-	  left:0;
-	  bottom:0;
-	  width:100%;
-	  background-color:black;
-	  cursor:pointer; 
-	  position: fixed;
-
-	}
-
-	#homeSplash img{
-		max-width: 100%;
-		max-height: 100%;
-		top: 50%;
-
-	}
+@media screen and (min-width: 480px) and (max-width: 600px) {
 
 	#homeSplash h1{
-		text-align: center;	
-		z-index: 100;
-		position: absolute;
-		font-size: 22em; /*22em full screen*/
-		color: rgba(255, 255, 255, 0.90); /*last value is text transparency*/
-		width: 100%;
+		font-size: 7em; /*22em full screen*/
 	}
 
-	#homeSplash a{
-		position: absolute;
+	#homeSplash .enter{
 		top: 0;
-	  left: 0;
-	  right: 0;
-	  bottom: 0;
-		width: 100%; 
-		height: 100%;
+
 	}
-
-
 
 	#mainMenu {
 		height: 100%;
 		width: 175px;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		font-size: 1em;
-		background-color: red;
-	  overflow-x: hidden;
 	  float: left;
 		  
 	}
 
-	#mainMenu ul li{
-		padding: 8px 8px 8px 32px;
-	  text-decoration: none;
-	  font-size: 25px;
-	  color: #818181;
-	  display: block;
-	  transition: 0.3s
+
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+
+	body {
+		margin-left: 175px; 
+	}
+
+	#homeSplash h1{
+		font-size: 8em; /*22em full screen*/
+	}
+
+	#homeSplash .enter{
+		top: 0;
+	}
+	
+
+	#mainMenu {
+		height: 100%;
+		width: 175px;
+	  float: left;
 
 	}
+
+	#mainMenu .closeBtn {
+		display: none;
+	}
+
+	#menuBtn {
+		display: none;
+	}
+
+
+
 
 }
