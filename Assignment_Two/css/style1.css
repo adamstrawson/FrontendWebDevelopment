@@ -520,6 +520,20 @@
 @media screen and (min-width: 1280px) {
 
 	#homeSplash h1{
-		font-size: 22em; /*22em full screen*/
+		font-size: 22em;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+
+	#homeSplash h1{
+		font-size: 24em;
+	}
+}
+
+@media screen and (min-width: 1680px) {
+
+	#homeSplash h1{
+		font-size: 26em;
 	}
 }
