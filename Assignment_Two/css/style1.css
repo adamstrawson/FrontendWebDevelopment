@@ -5,6 +5,8 @@
   min-height: 100%;
   background-color: black;	
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 
   /* allows user to use mouse to navigate slides if on device without touchscreen.
 	*	 These stop the text from being selected when draging.
@@ -81,7 +83,7 @@
 
 
 
-	.slideshow {
+	#mobile-slideshow {
 		width: 300px;
   	height: 500px;
     margin-left: auto;
@@ -95,12 +97,12 @@
 	/*
 	Hides the scrollbar for the slideshow to help it look cleaner for mobile users.
 	*/
-	.slideshow::-webkit-scrollbar {
+	#mobile-slideshow::-webkit-scrollbar {
 		width: 0;
 	}
 
 
-	.slideshow .slide {
+	#mobile-slideshow .slide {
 		float: left;
   	width: 300px;
   	height: 500px;
@@ -286,14 +288,14 @@
 	}
 
 
-	.slideshow .slide {
+	#mobile-slideshow .slide {
   	width: 350px;
   	height: 525px;
   	overflow-x: hidden;
 
 	}
 
-	.slideshow {
+	#mobile-slideshow {
 		width: 350px;
   	height: 525px;
 
@@ -304,15 +306,70 @@
 		overflow-x: hidden;
 	}
 
-	.slide #image5 {
-		right: 300px;
+	.slide a h1 {
+		top: 350px;
 	}
+
+	.slide a i {
+		top: 450px; 
+	}
+
+	#slide-1 i{
+		left: 310px;
+	}
+
+	#slide-2 .fa-arrow-right{
+		left: 660px; /*size of one slide + 260*/
+	}
+
+	#slide-2 .fa-arrow-left{
+		left: 362px; /*size of one slide + 12*/
+	}
+
+
+	#slide-3 .fa-arrow-right{
+		left: 1010px; /*size of two slides + 260*/
+	}
+
+	#slide-3 .fa-arrow-left{
+		left: 712px; /*size of two slides + 12*/
+	}
+
+
+	#slide-4 .fa-arrow-right{
+		left: 1360px; /*size of three slides + 260*/
+	}
+
+	#slide-4 .fa-arrow-left{
+		left: 1062px; /*size of three slides + 12*/
+	}
+
+
+	#slide-5 .fa-arrow-right{
+		left: 1710px; /*size of four slides + 260*/
+	}
+
+	#slide-5 .fa-arrow-left{
+		left: 1412px; /*size of four slides + 12*/
+	}
+
+	#slide-6 .fa-arrow-left{
+		left: 1762px; /*size of four slides + 12*/
+	}
+
+
 
 
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 600px) {
+@media screen and (min-width: 480px) {
+
+	body {
+		margin-left: 175px; 
+		background-color: white;
+
+	}
 
 	#homeSplash h1{
 		font-size: 7em; /*22em full screen*/
@@ -330,6 +387,36 @@
 		  
 	}
 
+	
+
+
+	#mobile-slideshow .slide {
+  	width: 425px;
+  	height: 637.5px; /* keep the 1.5 ratio */
+  	overflow-x: hidden;
+
+	}
+
+	#mobile-slideshow {
+		width: 425px;
+  	height: 637.5px;
+
+	}
+
+	.slide img {
+		height:	637.5px;
+		overflow-x: hidden;
+	}
+
+	#mainMenu .closeBtn {
+		display: none;
+	}
+
+	#menuBtn {
+		display: none;
+	}
+
+
 
 }
 
@@ -340,11 +427,11 @@
 
 	body {
 		margin-left: 175px; 
+		background-color: white;
 	}
 
-	#homeSplash {
-		position: absolute;
-	}
+	
+
 
 	#homeSplash h1{
 		font-size: 8em; /*22em full screen*/
@@ -368,7 +455,58 @@
 	}
 
 	#menuBtn {
+		display: none;
 	}
+
+	#mobile-slideshow .slide {
+  	width: 425px;
+  	height: 637.5px; /* keep the 1.5 ratio */
+  	overflow-x: hidden;
+
+	}
+
+	#mobile-slideshow {
+		width: 425px;
+  	height: 637.5px;
+
+	}
+
+	.slide img {
+		height:	637.5px;
+		overflow-x: hidden;
+	}
+
+@media screen and (min-width: 800px) {
+
+	
+
+	#mobile-slideshow {
+		display: none;
+	}
+
+
+	#main-slideshow { 
+    position: relative; 
+    width: 100%; 
+    display: block;
+    background-color: white;
+    
+	}
+
+	#main-slideshow div { 
+	  position: fixed;  
+	  height: 100%;
+	  width: 100%;
+	}
+
+	#main-slideshow div img {
+		height: 100%;
+	}
+
+
+
+}
+
 
 
 @media screen and (min-width: 1280px) {

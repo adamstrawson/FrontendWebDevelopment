@@ -21,4 +21,18 @@ function closeMenu() {
 */
 function showContent() {
 	document.getElementById("postSplash").style.opacity = "1";
+	document.getElementById("main-slideshow").style.display = "block";
 }
+
+	
+$("#main-slideshow div:gt(1)").hide();
+
+setInterval(function() {
+  $('#main-slideshow div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .appendTo('#main-slideshow');
+}, 5000);
+
+
