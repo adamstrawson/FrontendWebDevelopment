@@ -4,114 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <title>Thomas Hogan Photography Portfolio</title>
-  <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <script src="javaScript/jquery-3.1.1.min.js"></script>
-  <script src="javaScript/script.js"></script>
+  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/font-awesome.css">
+  <script src="../javaScript/jquery-3.1.1.min.js"></script>
+  <script src="../javaScript/script.js"></script>
  	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
   
 </head>
 <body>
-	<div id=postSplash>
-		<nav id="mainMenu">
-			<h1>Thomas Hogan</h1>
-			<ul>
-				<li> 
-					<a href="/portraits">Portraits</a> 
-				</li>
-				<li> 
-					<a href="/street">Street</a> 
-				</li>
-				<li> 
-					<a href="/power">Power</a> 
-				</li>
-				<li> 
-					<a href="/moverment">Movement</a> 
-				</li>
-				<li> 
-					<a href="/contact">Contact</a> 
-				</li>
-				<li> 
-					<a href="/about">About</a> 
-				</li>
-			</ul>
-		</nav>
+	<nav id="mainMenu">
+		<a href="/index.html" id="myName">Thomas<br>Hogan</a>
+		<a href="javascript:void(0)" class="closeBtn" onclick="closeMenu()">&times;</a>
+		<a href="../pages/showcase.html" style="color: #cc7377">Showcase</a>
+		<a href="../pages/street.html">Street</a>
+		<a href="../pages/power.html">Power</a>
+		<a href="../pages/portraits.html">Portraits</a>
+		<a href="../pages/about.html">About Me</a>
+		<a href="../pages/contact.html">Contact</a>
+		<a href="https://twitter.com/ThomasHogan_"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/thomashogan/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://www.flickr.com/photos/137445372@N06/"><i class="fa fa-flickr" aria-hidden="true"></i></a>
+		<a href="https://www.facebook.com/thomashoganphoto/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
-		<div class="slideshow">
-			<div class="holder">
-				<div class="slide" id="slide-1">
-					<a href="/Showcase"> 
-						<h1>Showcase</h1>
-						<i class="fa fa-arrow-right" aria-hidden="true"></i>
-						<img src="images/power1.jpg" id="image1">
-					</a>
-				</div>
-				
-				<div class="slide" id="slide-2">
-					<a href="/Street">
-						<h1>street</h1>
-						<i class="fa fa-arrow-left" aria-hidden="true"></i>
-						<i class="fa fa-arrow-right" aria-hidden="true"></i>
-						<img src="images/street5.jpg" id="image2">
-					</a>
-				</div>
+	</nav>
 
-				<div class="slide" id="slide-3">
-					<a href="/Power"> 
-						<h1>Power</h1>
-						<i class="fa fa-arrow-left" aria-hidden="true"></i>
-						<i class="fa fa-arrow-right" aria-hidden="true"></i>
-						<img src="images/power2.jpg" id="image3">
-					</a>
-				</div>
 
-				<div class="slide" id="slide-4">
-					<a href="/Portraits">
-						<h1>Portraits</h1>
-						<i class="fa fa-arrow-left" aria-hidden="true"></i>
-						<i class="fa fa-arrow-right" aria-hidden="true"></i>
-						<img src="images/portraits4.jpg" id="image4">
-					</a>
-				</div>
 
-				<div class="slide" id="slide-5">
-					<a href="/About">
-						<h1>About me</h1>
-						<i class="fa fa-arrow-left" aria-hidden="true"></i>
-						<i class="fa fa-arrow-right" aria-hidden="true"></i>
-						<img src="images/me.jpg" id="image5">
-					</a>
-				</div>
 
-				<div class="slide" id="slide-6">
-					<a href="/Contact">
-						<h1>Contact</h1>
-						<i class="fa fa-arrow-left" aria-hidden="true"></i>
-						<img src="images/power5.jpg" id="image6">
-					</a>
-				</div>
+	<i id="menuBtn" class="fa fa-bars" aria-hidden="true" onclick="openMenu()"></i>
 
-				<div class="currentSlideDot">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				  <span class="dot" onclick="currentSlide(4)"></span> 
-				  <span class="dot" onclick="currentSlide(5)"></span> 
-				  <span class="dot" onclick="currentSlide(6)"></span> 
 
-				</div>
 
+	<div class="gallery-slideshow">
+			<div class="main-slide">
+				<img src="../images/power1.jpg">
+			</div>
+			<div class="main-slide">
+				<a href="../images/power1.jpg">
+					<img src="../images/power1_landscape.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/power2.jpg">
+					<img src="../images/power2_landscape.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/street6.jpg">
+					<img src="../images/street6.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/street8.jpg">
+					<img src="../images/street8.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/portraits4.jpg">
+					<img src="../images/portraits4_landscape.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/portraits5.jpg">
+					<img src="../images/portraits5.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/portraits6.jpg">
+					<img src="../images/portraits6.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/power3.jpg">
+					<img src="../images/power3_landscape.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/street1.jpg">
+					<img src="../images/street1.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/street2.jpg">
+					<img src="../images/street2.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/street5.jpg">
+					<img src="../images/street5_landscape.jpg">
+				</a>
+			</div>
+			<div class="main-slide">
+				<a href="../images/portraits2.jpg">
+					<img src="../images/portraits2.jpg">
+				</a>
 			</div>
 		</div>
-	</div>
 
-  <div id="homeSplash">
-	  <a href="#" class="enter">
-		  <h1>HOGAN</h1>
-		  <img src="images/street2.jpg" id="city_people2">
-	  </a>
-	</div>
+	
 	
 </body>
 </html>

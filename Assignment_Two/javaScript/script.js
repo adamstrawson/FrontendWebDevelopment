@@ -25,14 +25,23 @@ function showContent() {
 }
 
 	
-$("#main-slideshow div:gt(1)").hide();
-
+/* Slideshow for the main homepage */
 setInterval(function() {
-  $('#main-slideshow div:first')
+  $("#main-slideshow div:first")
     .fadeOut(1000)
     .next()
     .fadeIn(1000)
-    .appendTo('#main-slideshow');
+    .appendTo("#main-slideshow");
 }, 3000);
 
+
+
+/* Slideshow for the other pages */
+setInterval(function() {
+  $(".gallery-slideshow div:first")
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .appendTo(".gallery-slideshow");
+}, 3000);
 
