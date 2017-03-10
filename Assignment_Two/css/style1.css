@@ -435,7 +435,7 @@
 
 
 	#homeSplash h1{
-		font-size: 8em; /*22em full screen*/
+		font-size: 10em; /*22em full screen*/
 	}
 
 	#homeSplash .enter{
@@ -509,10 +509,47 @@
 	#main-slideshow h1 {
 		z-index: 1;
 		position: absolute;
-		font-size: 20em;
+		font-size: 11em;
 		color: rgba(204, 115, 119, 0.9);
 	}
 
+	#homeSplash h1{
+		font-size: 13.5em;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	#homeSplash h1{
+		font-size: 14em;
+	}
+
+	#main-slideshow h1 {
+		font-size: 13em;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+
+	#homeSplash h1{
+		font-size: 16em;
+	}
+
+	#main-slideshow h1 {
+		font-size: 15em;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+
+	#homeSplash h1{
+		font-size: 18em;
+	}
+
+	#main-slideshow h1 {
+		font-size: 16.5em;
+	}
 }
 
 
@@ -524,7 +561,7 @@
 	}
 
 	#main-slideshow h1 {
-		font-size: 20em;
+		font-size: 17.5em;
 	}
 }
 
@@ -539,7 +576,7 @@
 	}
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1620px) {
 
 	#homeSplash h1{
 		font-size: 26em;
@@ -549,5 +586,24 @@
 		font-size: 24em;
 	}
 
+@media screen and (min-width: 1860px) {
+
+	#homeSplash h1{
+		font-size: 28em;
+	}
+
+	#main-slideshow h1 {
+		font-size: 28em;
+	}
+
+@media screen and (min-width: 2020px) {
+
+	#homeSplash h1{
+		font-size: 30em;
+	}
+
+	#main-slideshow h1 {
+		font-size: 30em;
+	}
 
 }
