@@ -33,6 +33,22 @@
 
 	}
 
+	#main-slideshow { 
+    display: none;    
+	}
+
+	#main-slideshow div{ 
+    display: none;    
+	}
+
+	#main-slideshow div img{ 
+    display: none;    
+	}
+
+	#main-slideshow h1{ 
+    display: none;    
+	}
+
 	#menuBtn {
 		color: rgba(255, 255, 255, 0.9);	
 		z-index: 1;
@@ -476,11 +492,65 @@
 		height:	637.5px;
 		overflow-x: hidden;
 	}
+	.slide a h1 {
+		top: 400px;
+	}
+
+	.slide a i {
+		top: 550px; 
+		font-size: 3em;
+	}
+
+	#slide-1 i{
+		left: 365px;
+	}
+
+	#slide-2 .fa-arrow-right{
+		left: 785px; /*size of one slide + 260*/
+	}
+
+	#slide-2 .fa-arrow-left{
+		left: 437px; /*size of one slide + 12*/
+	}
+
+
+	#slide-3 .fa-arrow-right{
+		left: 1210px; /*size of two slides + 260*/
+	}
+
+	#slide-3 .fa-arrow-left{
+		left: 862px; /*size of two slides + 12*/
+	}
+
+
+	#slide-4 .fa-arrow-right{
+		left: 1635px; /*size of three slides + 260*/
+	}
+
+	#slide-4 .fa-arrow-left{
+		left: 1287px; /*size of three slides + 12*/
+	}
+
+
+	#slide-5 .fa-arrow-right{
+		left: 2060px; /*size of four slides + 260*/
+	}
+
+	#slide-5 .fa-arrow-left{
+		left: 1712px; /*size of four slides + 12*/
+	}
+
+	#slide-6 .fa-arrow-left{
+		left: 2137px; /*size of four slides + 12*/
+	}
 
 
 }
 
+
+
 @media screen and (min-width: 800px) {
+
 
 	
 
@@ -498,15 +568,18 @@
 	}
 
 	#main-slideshow div { 
+		display: block;
 	  position: fixed;  
 	  width: 100%;
 	}
 
 	#main-slideshow div img {
+		display: block;
 		width: 100%;
 	}
 
 	#main-slideshow h1 {
+		display: block;
 		z-index: 1;
 		position: absolute;
 		font-size: 11em;
@@ -537,7 +610,7 @@
 	}
 
 	#main-slideshow h1 {
-		font-size: 15em;
+		font-size: 14em;
 	}
 }
 
@@ -548,7 +621,7 @@
 	}
 
 	#main-slideshow h1 {
-		font-size: 16.5em;
+		font-size: 15em;
 	}
 }
 
