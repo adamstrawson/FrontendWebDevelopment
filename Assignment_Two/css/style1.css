@@ -161,7 +161,7 @@
 	}
 
 	.slide a h1:hover {
-		/*color: #992d2b;*/
+		color: #cc7377;
 	}
 
 	#slide-1 a h1 {
@@ -260,12 +260,16 @@
 
 	}
 
+	#homeSplash h1:hover {
+		color: #cc7377;
+	}
+
 	#homeSplash h1{
 		text-align: center;	
 		z-index: 100;
 		position: absolute;
 		font-size: 4em; /*22em full screen*/
-		color: rgba(204, 115, 119, 0.9); /*last value is text transparency*/
+		color: rgba(255, 255, 255, 0.9); /*last value is text transparency*/
 		width: 100%;
 	}
 
